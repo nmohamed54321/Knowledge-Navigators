@@ -1,0 +1,181 @@
+/* -------------------------------------------------------------------------- */
+/*                                    Fonts                                   */
+/* -------------------------------------------------------------------------- */
+/* Primary font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* Secondary font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Globals                                  */
+/* -------------------------------------------------------------------------- */
+:root {
+    /* Fonts */
+    --font-primary-head: 'Lato';
+    --font-secondary-body: 'Open Sans';
+    
+    /* Primary colors */
+    --primary-color-1: #5C83BF;
+    --primary-color-2: #7CADF8;
+    --primary-color-3: #333434;
+    --primary-color-4: #F1F1F2;
+
+    /* Secondary colors */
+    --secondary-color-1: #F0716B;
+    --secondary-color-2: #9B59B6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-secondary-body);
+}
+
+/* Button style */
+.button {
+    background-color: var(--primary-color-2);
+    color: white;
+}
+
+/* Horizontal center */
+.h-center {
+    max-width: 100vw;
+    padding: 0 1.4rem;
+    margin: 0 auto;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    Logo                                    */
+/* -------------------------------------------------------------------------- */
+
+.img-align-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0fr 1fr;
+    column-gap: 0px;
+}
+
+.logo-text {
+    color: var(--primary-color-1);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Navbar                                   */
+/* -------------------------------------------------------------------------- */
+/* Whole navbar */
+#navbar {
+    padding-top: 2em;
+}
+
+/* Navbar content */
+.navbar-container {
+    font-family: var(--font-primary-head);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    
+}
+
+/* Each navbar item */
+.navbar-item {
+    margin: 0.4em;
+    padding: 0 3em;
+    width: 100%;
+}
+
+/* Remove default link color */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* TODO: mobile size? */
+
+/* Desktop size */
+@media screen and (min-width: 700px) {
+    .navbar-toggle {
+        display: none;
+    }
+    
+    .navbar .navbar-menu,
+    .navbar.opened .navbar-menu {
+        visibility: visible;
+        opacity: 1;
+        position: static;
+        display: block;
+        height: 100%;
+    }
+
+    .navbar .navbar-links,
+    .navbar.opened .navbar-links {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        position: static;
+        flex-direction: row;
+        list-style-type: none;
+        max-height: max-content;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar .navbar-link:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Sign up button */
+.button-sign-up {
+    padding: .8em 2em;
+    border-radius: 25px;
+    margin-left: 2.5em;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    Hero                                    */
+/* -------------------------------------------------------------------------- */
+/* Hero image */
+.hero-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0fr 1fr;
+    column-gap: 0px;
+}
+
+/* Hero text container */
+.hero-text-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Hero header text */
+.hero-text-header {
+    font-size: 25pt;
+    background: linear-gradient(135deg, var(--secondary-color-2) 0%, var( --secondary-color-1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+}
+
+/* Hero subheader text */
+.hero-text-subheader {
+    margin-top: 1.8em;
+}
+
+/* Contact button */
+.button-contact {
+
+}
