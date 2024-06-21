@@ -1,11 +1,11 @@
 /* -------------------------------------------------------------------------- */
 /*                                    Fonts                                   */
 /* -------------------------------------------------------------------------- */
-/* Primary font */
+/* Primary font (Lato) */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
-/* Secondary font */
+/* Secondary font (Open Sans) */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
@@ -83,7 +83,6 @@ body {
     justify-content: space-between;
     height: 100%;
     align-items: center;
-    
 }
 
 /* Each navbar item */
@@ -176,6 +175,35 @@ a {
 }
 
 /* Contact button */
+.hero-button {
+    margin-top: 3em;
+}
 .button-contact {
+    padding: 1em 6em;
+    border-radius: 10px;
+}
 
+
+/* -------------------------------------------------------------------------- */
+/*                              Why Learnovation                              */
+/* -------------------------------------------------------------------------- */
+/* Background/Why container */
+.why-learnovation-container {
+    background-image: linear-gradient(to right, var(--secondary-color-1), var(--secondary-color-2));
+    color: white;
+    text-align: center;
+    font-family: var(--font-primary-head);
+    padding: 2em;
+}
+
+/* Title */
+.why-learnovation-header {
+    font-size: 25pt;
+}
+
+/* Icons container */
+.icons-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin-top: 5em;
 }
