@@ -55,7 +55,7 @@ ROOT_URLCONF = 'learnovation_launchpad.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'learnovation_launchpad', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
