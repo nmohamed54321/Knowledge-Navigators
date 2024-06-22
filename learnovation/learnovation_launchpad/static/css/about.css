@@ -1,0 +1,62 @@
+*{
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  display: flex
+}
+
+footer {
+  display: flex;
+  background-color: #5C83BF;
+  color: #F1F1F2;  
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.header-link{
+  color: black;
+}
+
+.site-name {
+  display: flex;
+}
+
+.header-title {
+  color: #5C83BF;
+  
+}
+
+.top-nav {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header-list {
+  display: inline-block;
+}
+
+.signup-button {
+  background-color: #7cadf8;
+  border: none;
+  color: white;
+  padding:10px 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.social-icons {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.footer-about .footer-joinus .footer-explore {
+  color: black;
+}
