@@ -1,0 +1,97 @@
+*{
+    font-family: 'Lato', sans-serif; /*Sets the font for the entire page*/
+  }
+  
+  header {
+    display: flex /*Makes the header a flex container*/
+  }
+  
+  
+  a {
+    text-decoration: none; /*Removes underline from links*/
+    margin-right: 40px; /*Adds space between the tabs in the header*/
+  }
+  
+  .header-link{
+    color: black; /*Color the links/tabs in the header*/
+  }
+  
+  .site-name {
+    display: flex; 
+  }
+  
+  .header-title {
+    color: #5C83BF; /*Colors Learnovation Academy*/
+    
+  }
+  
+  .top-nav {
+    display: flex;
+    margin-left: auto; /*Shifts the tabs to the right*/
+  }
+  
+  ul {
+    list-style-type: none; /*Removes bullet points from the list*/
+    margin-right: 30px;  /*Adds space between the tabs in the header*/
+  }
+
+  
+  .header-list {
+    display: inline-block; /*Displays the list items horizontally*/
+  }
+
+  .contact-header {
+    background-color: white; /*Sets the background color of the header*/
+    color: black; /*Sets the text color to black*/
+    padding: 0px; /*Adds padding around the text*/
+    text-align: center; /*Aligns the text to the center*/
+    /*width: 100%; Sets the width of the header to 100%*/
+    margin-left: 0%; /*Sets the margin to 0%*/
+  }
+
+  .contact-header h1 {
+    margin-top: 10px; /*Sets the margin at the top of the header text*/
+    margin-bottom: 30px; /*Sets the margin at the bottom of the header text*/
+  }
+
+  .contact-header img {
+    margin-bottom: 30px; /*Sets the margin at the bottom of the header text*/
+  }
+ 
+  .contact-info-box{
+    background-color: pink; /* Change this to your desired color */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Set the desired corner roundness */
+    color: black; /* Change this to your desired text color */
+  }
+
+ 
+  
+
+
+
+
+  .signup-button {
+    background-color: #7cadf8;
+    border: none;
+    color: white;
+    padding:10px 20px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+  }
+  
+  .footer-about .footer-joinus .footer-explore {
+    color: black;
+  }
+
+  footer {
+    display: flex;
+    background-color: #5C83BF;
+    color: #F1F1F2;  
+  }

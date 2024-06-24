@@ -11,3 +11,7 @@ def home(request):
 def about(request):
     return render(request, 'about.html') #This renders the about.html template
     # If this doesn't work, try: 'learnovation_launchpad/about.html'
+
+def contact(request):
+    return render(request, 'contact.html') #This renders the contact.html template
+    # If this doesn't work, try: 'learnovation_launchpad/contact.html'
