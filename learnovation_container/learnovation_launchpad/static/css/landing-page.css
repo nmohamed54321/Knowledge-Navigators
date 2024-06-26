@@ -266,8 +266,34 @@ a {
     border: 1px solid rgb(92, 131, 191);
     border-radius: 15px;
     background: rgb(241, 241, 242);
-    width: 430px;
+    width: 26.875em;
     padding: 1em;
+}
+
+.course-img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.course-img-overlay {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.course-img-overlay-main {
+    font-size: 1.5em;
+    top: 53%;
+    letter-spacing: -.02em;
+    font-weight: 400;
+}
+.course-img-overlay-sub {
+    font-size: 1.25em;
+    top: 76%;
+}
+
+/* Course info */
+.recommended-course-info {
+    margin-left: 1em;
 }
 
 /* Course pricing */
@@ -280,6 +306,7 @@ a {
 /* Course title */
 .recommended-course-title {
     margin: .5em 0;
+    font-size: 1.25em;
 }
 
 /* Rating + review */
@@ -297,7 +324,7 @@ a {
     width: 2em;
 }
 
-/* Reviews */
+/* Reviews text */
 .recommended-reviews {
     display: flex;
     flex-direction: row;
@@ -315,4 +342,5 @@ a {
 .button-start {
     padding: 1em 4em;
     border-radius: 15px;
+    font-size: 0.9375em;
 }
