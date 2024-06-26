@@ -1,12 +1,27 @@
 /* -------------------------------------------------------------------------- */
 /*                                    Fonts                                   */
 /* -------------------------------------------------------------------------- */
-/* Primary font (Lato) */
+/* Primary/headline fonts */
+/* Lato */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Inter (alternate) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* Secondary font (Open Sans) */
+/* Montserrat (alternate) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* Secondary/body fonts */
+/* Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* PT Sans (alternate) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Source Sans Pro (alternate) */
+@import url("https://use.typekit.net/qyq6gec.css");
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -35,6 +50,7 @@
 
 body {
     font-family: var(--font-secondary-body);
+    margin: 0 1.5rem;
 }
 
 /* Button style */
@@ -50,20 +66,22 @@ body {
     margin: 0 auto;
 }
 
-
-/* -------------------------------------------------------------------------- */
-/*                                All container                               */
-/* -------------------------------------------------------------------------- */
-/* Main container */
-.all-container {
-    margin: 0 1.4rem;
+/* Vertical center */
+.v-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+/* Some elements inside all-container will have full width */
+.full-width {
+    --content-width: 100%;
 
-/* -------------------------------------------------------------------------- */
-/*                                    Logo                                    */
-/* -------------------------------------------------------------------------- */
+    margin-left: calc(-100vw / 2 + var(--content-width) / 2);
+    margin-right: calc(-100vw / 2 + var(--content-width) / 2);
+}
 
+/* Align text next to image */
 .img-align-container {
     display: grid;
     align-items: center;
@@ -71,9 +89,15 @@ body {
     column-gap: 0px;
 }
 
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    Logo                                    */
+/* -------------------------------------------------------------------------- */
 .logo-text {
     color: var(--primary-color-1);
 }
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -149,6 +173,7 @@ a {
 }
 
 
+
 /* -------------------------------------------------------------------------- */
 /*                                    Hero                                    */
 /* -------------------------------------------------------------------------- */
@@ -192,18 +217,17 @@ a {
 }
 
 
+
 /* -------------------------------------------------------------------------- */
 /*                              Why Learnovation                              */
 /* -------------------------------------------------------------------------- */
 /* Background/Why container */
 .why-learnovation-container {
-    background-image: linear-gradient(to right, var(--secondary-color-1), var(--secondary-color-2));
+    background-image: linear-gradient(85.45deg, var(--secondary-color-1) 20.025%, var(--secondary-color-2) 108.77%);
     color: white;
     text-align: center;
     font-family: var(--font-primary-head);
     padding: 2em;
-    margin-left: calc(-100vw / 2 + 500px / 2);
-    margin-right: calc(-100vw / 2 + 500px / 2);
 }
 
 /* Title */
@@ -219,7 +243,76 @@ a {
 }
 
 
+
 /* -------------------------------------------------------------------------- */
 /*                             Recommended Courses                            */
 /* -------------------------------------------------------------------------- */
-/* Container */
+/* Recommended container */
+.recommended-courses-container {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Recommended title */
+.recommended-title {
+    width: 12em;
+    margin-left: 2em;
+    font-size: larger;
+}
+
+/* Course card */
+.course-card {
+    box-sizing: border-box;
+    border: 1px solid rgb(92, 131, 191);
+    border-radius: 15px;
+    background: rgb(241, 241, 242);
+    width: 430px;
+    padding: 1em;
+}
+
+/* Course pricing */
+.recommended-pricing {
+    color: rgb(240, 113, 107);
+    font-family: 'Inter', sans-serif;
+    margin: .5em 0;
+}
+
+/* Course title */
+.recommended-course-title {
+    margin: .5em 0;
+}
+
+/* Rating + review */
+.recommended-rating-review {
+    margin: .5em 0;
+}
+
+/* Star ratings */
+.stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.star {
+    width: 2em;
+}
+
+/* Reviews */
+.recommended-reviews {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: .5em;
+}
+
+/* Start course button */
+.start-course-button {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-start {
+    padding: 1em 4em;
+    border-radius: 15px;
+}
