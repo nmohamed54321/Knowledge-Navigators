@@ -67,7 +67,7 @@ body {
     margin: 0 auto;
 }
 
-/* Vertical center */
+/* Align items in a row */
 .content-row {
     display: flex;
     flex-direction: row;
@@ -348,4 +348,66 @@ a {
     padding: 1em 4em;
     border-radius: 15px;
     font-size: 0.9375em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+/* Footer container */
+#footer-container {
+    --footer-nav-col: 10em;
+
+    background-color: var(--primary-color-1);
+    color: white;
+    padding: 3.5em 5em;
+    font-family: var(--font-primary-head);
+    display: grid;
+    grid-template-columns: 40em var(--footer-nav-col) 9em var(--footer-nav-col);
+}
+
+/* Footer nav area */
+.footer-nav {
+    font-size: 1.2em;
+}
+.footer-nav-item-middle-spacing {
+    margin: 1em 0;
+}
+.footer-nav-header {
+    font-weight: 400;
+}
+.footer-nav-items {
+    font-weight: 300;
+}
+ul {
+    list-style-type: none;
+}
+
+/* ----------------------------- Tagline column ----------------------------- */
+/* Tagline */
+.footer-tagline {
+    font-size: 1.625em;
+    font-weight: 300;
+}
+
+/* Copyright */
+.footer-copyright {
+    padding: 1em 0;
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+/* Social media */
+.footer-social-media {
+    column-gap: 1em;
+    padding-bottom: 3em;
+}
+.footer-social-media-icon {
+    width: 2em;
+}
+
+/* Footer logo */
+.footer-logo {
+    width: 3.5em;
 }
