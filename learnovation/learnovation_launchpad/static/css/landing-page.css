@@ -205,11 +205,19 @@ a {
 
 /* Hero vectors */
 .hero-sparkle-1 {
-    /* position: relative; */
-    width: 23px;
-    height: 23px;
-    left: 95%;
-    top: 211px;
+    position: absolute;
+    left: 91vw;
+    top: 14vw;
+}
+.hero-sparkle-2 {
+    position: absolute;
+    left: 88vw;
+    top: 22.5vw;
+}
+.hero-key {
+    position: absolute;
+    left: 92vw;
+    top: 26vw;
 }
 
 /* Hero text container */
@@ -221,7 +229,7 @@ a {
 
 /* Hero header text */
 .hero-text-header {
-    font-size: 2vw;
+    font-size: 1.5em;
     font-family: var(--font-primary-head);
     line-height: 5vw;
     background: linear-gradient(135deg, var(--secondary-color-2) 0%, var( --secondary-color-1) 100%);
