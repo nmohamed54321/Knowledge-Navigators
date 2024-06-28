@@ -40,6 +40,20 @@
     display: inline-block; /*Displays the list items horizontally*/
   }
 
+  .signup-button {
+    background-color: #7cadf8;
+    border: none;
+    color: white;
+    padding:10px 20px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+
+
+
+
+
   
   .contact-header h1 {
     color: black; /*Sets the text color to black*/
@@ -76,39 +90,114 @@
 
   .contact-info p{
     margin-left: 30px;
-    
-    
   }
 
- 
 
- 
+
+
+
+  /*Edits the line between contact-body-container*/
+  .line-container line {
+    border: none;
+    height: 100px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    background-color: #5C83BF;
+    margin: 20px auto;
+    width: 50%;
+  }
+
+  .line{
+    border: none; /* Remove default border */
+    height: 1.5px; /* Set the height of the line */
+    background-color: #5C83BF;
+    margin: 20px auto; /* Add some margin for spacing */
+    width: 85%; /* Set the width of the line */
+
   
+  }
 
 
 
+  /*Newsletter + Button*/
+  .newsletter-container{
+    text-align: center;
+  }
 
-  .signup-button {
-    background-color: #7cadf8;
+  .newsletter-container p {
+    font-weight: bold;
+  }
+
+  .newsletter-container button {
+    background: linear-gradient(to right,#a35baf,#a75daa,#ac5ea7,#bc6298,#d26988,#da6a7f,#e16d78, #e87071, #ee716e);
     border: none;
     color: white;
     padding:10px 20px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 8px;
+    width: 550px; /* Adjust width as needed */
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+
+
+  /*Footer*/
+  footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #5C83BF;
+    color: #F1F1F2;
+    font-family: "Lato";
+  }
+  
+  .slogan-info-media {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+    margin: 30px 0 20px 0;
   }
   
   .social-icons {
     display: flex;
     font-size: 1rem;
+    justify-content: space-around;
+    align-content: space-around;
     align-items: center;
+    gap: 20px;
   }
   
-  .footer-about .footer-joinus .footer-explore {
-    color: black;
-  }
-
-  footer {
+  .footer-menu {
+    color: #F1F1F2;
     display: flex;
-    background-color: #5C83BF;
-    color: #F1F1F2;  
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 30px 0 auto 0;
   }
+  
+  .footer-link {
+    color: #F1F1F2;
+  }
+  
+  @media only screen and (max-width: 430px) {
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    }
+
+ 
+
+ 
+  
+
+
+
+
+
+  
+
