@@ -1,0 +1,12 @@
+<svg width="52.000000" height="40.000000" viewBox="0 0 52 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc>
+            Created with Pixso.
+    </desc>
+    <defs>
+        <pattern id="pattern_516_13200" patternContentUnits="objectBoundingBox" width="1.000000" height="1.000000">
+            <use xlink:href="#image516_1320_0" transform="matrix(0.007813,0,0,0.010156,0,-0.15)"/>
+        </pattern>
+        <image id="image516_1320_0" width="128.000000" height="128.000000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABHNCSVQICAgIfAhkiAAAAatJREFUeJzt2r1OAkEAhdFra0OlD0KPvb6vj2DsfQbttNHCUguzCSEgC/szM8s5yZSGge+6UpgAAAAAAAAAAAAAAAAAAAAAAAAAAADAv65LX2AES3gPRayTvCZ5KH2RATZJ3pLclb5Ia9ZJ3pP8JPlOcl/2OmfZJPnM33v4jBH0tk7ykb8PrjvfaetJsB2/O18xgqP2xW9tBPviG0EP24/9Q6f2EfwXvzv+HOzRJ37tI+gT3wj2OCX+9ghq+mJ4Snwj2PGY0z642p4E58TvzlOSq/mvXJdVkue0OYIh8V+S3M5/5Tq1OALxR9bSCMSfyNARzPHFUPyJ1fwkEH8mNY5A/JnVNALxC6lhBOIXVnIEQ+PfDHhttpQYgd/8ysw5AvErNccIxK/clCMQvxFTjED8xow5AvEbNcYIxG/c0BF8nfmz4ldkyAjEX4i5RiB+xaYegfgNmGoE4jdk7BGI36CxRiB+w4aOQPwFOHcE4i/IqSMQf4H6jkD8BTs2AvEvwKERiH9Bdkcg/gXqRiD+BVvFv24DAAAAAAAAAAAAAAAAAAAAAAAAAAAABf0CrzpRn70U/YcAAAAASUVORK5CYII="/>
+    </defs>
+    <rect id="Why Learnovation Background" width="52.000000" height="40.000000" fill="url(#pattern_516_13200)" fill-opacity="1.000000"/>
+</svg>
