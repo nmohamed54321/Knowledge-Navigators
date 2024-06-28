@@ -15,3 +15,4 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html') #This renders the contact.html template
     # If this doesn't work, try: 'learnovation_launchpad/contact.html'
+
