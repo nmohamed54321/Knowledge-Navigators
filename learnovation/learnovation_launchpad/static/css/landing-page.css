@@ -200,7 +200,7 @@ a {
 
 /* Hero image */
 .hero-img {
-    width: 45vw;
+    width: 35em;
 }
 
 /* Hero vectors */
@@ -229,7 +229,7 @@ a {
 
 /* Hero header text */
 .hero-text-header {
-    font-size: 1.5em;
+    font-size: 2vw;
     font-family: var(--font-primary-head);
     line-height: 5vw;
     background: linear-gradient(135deg, var(--secondary-color-2) 0%, var( --secondary-color-1) 100%);
