@@ -66,22 +66,26 @@
     margin-left: -1rem;
   }
 
+  /*Controls the contact info and the form*/
   .contact-body-container{
     padding: 70px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    /*justify-content: space-between;*/
+    /*align-items: flex-start;*/
   }
 
 
   .contact-info-box{
-    /*background-color: greenyellow; /* Change this to your desired color */
-    /*padding: 20px; /* Adjust padding as needed */
-    /*border-radius: 10px; /* Set the desired corner roundness */
-    /*color: black; /* Change this to your desired text color */
     width: 450px;            /* Width of the box */
     height: 350px;           /* Height of the box */
     background-color: #5C83BF; 
     color: white;             
     border-radius: 15px;     /* Rounded corners (optional) */
-    margin-top: 20px;        /* Spacing between boxes */
+    /*margin-top: 20px;        /* Spacing between boxes */
+    display: flex;
+  
   }
 
   .contact-info h2{
@@ -92,30 +96,100 @@
     margin-left: 30px;
   }
 
+  /*Edits the form container*/
+  .contact-form-box {
+    width: 450px;            /* Width of the box */
+    height: 350px;           /* Height of the box */
+    color: black;       
+  }
+
+  /*Edits the actual contact form*/
+  .input-line{
+    border:none;
+    outline: none;
+    border-bottom: 1px solid black; /* Add bottom border */
+    width: 40%;
+  }
+
+  .name-row{
+    display: flex;
+    gap: 130px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    /*margin: 20px;*/
+  }
+
+  .name-input{
+    display: flex;
+    gap: 44px;
+    padding-bottom: 20px;
+  }
+
+
+
+
+  .email-phone-row{
+    display: flex;
+    gap: 177px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .email-phone-input{
+    display: flex;
+    gap: 44px;
+    padding-bottom: 20px;
+  }
+
+  .message-row{
+    display: flex;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .message-row-input{
+    display: flex;
+    padding-bottom: 20px;
+  }
+
+  .input-line-message{
+    border:none;
+    outline: none;
+    border-bottom: 1px solid black; /* Add bottom border */
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  .send-message{
+    /*justify-content: right;*/
+    display: grid;
+    justify-content: end; /* Aligns the button to the right */
+    margin-right: 40px;
+    margin-top: 32px;
+  }
+
+  .send-message-button{
+    /*text-align: right;*/
+    background-color: lightskyblue;
+    border: none;
+    color: white;
+    padding:10px 20px;
+    border-radius: 10px;
+  }
+
 
 
 
 
   /*Edits the line between contact-body-container*/
-  .line-container line {
-    border: none;
-    height: 100px;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-    background-color: #5C83BF;
-    margin: 20px auto;
-    width: 50%;
-  }
-
   .line{
     border: none; /* Remove default border */
-    height: 1.5px; /* Set the height of the line */
-    background-color: #5C83BF;
+    height: .50px; /* Set the height of the line */
+    background-color: lightskyblue;
     margin: 20px auto; /* Add some margin for spacing */
     width: 85%; /* Set the width of the line */
-
-  
   }
 
 
@@ -130,7 +204,7 @@
   }
 
   .newsletter-container button {
-    background: linear-gradient(to right,#a35baf,#a75daa,#ac5ea7,#bc6298,#d26988,#da6a7f,#e16d78, #e87071, #ee716e);
+    background: linear-gradient(to right,#a75daa,#ac5ea7,#bc6298,#d26988,#da6a7f,#e16d78, #e87071);
     border: none;
     color: white;
     padding:10px 20px;

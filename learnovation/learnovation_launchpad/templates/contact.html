@@ -59,9 +59,11 @@
                 <h1>Contact Us</h1>
             </div>
             
+
             <div class="contact-header-img">
                 <img src="../static/images/contact-banner.png" alt="contact banner" width="100%" height="30%">
             </div>
+
 
             <div class="contact-body-container">
                 <div class="contact-info-box">
@@ -83,36 +85,42 @@
                             <span>demo@gmail.com</span>
                         </p>
                     </div>
-                </div>
-                <!--The form should go here -->
+                </div> <!--End of contact-info-box-->
+
+
                 <div class="contact-form-box">
                     <div class="contact-form">
                         <form method="post" action="">
                             {% csrf_token %}
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" name="firstName" required>
-
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" name="lastName" required>
-
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-
-                            <label for="phoneNumber">Phone Number</label>
-                            <input type="tel" id="phoneNumber" name="phoneNumber">
-
-                            <label for="message">Message</label>
-                            <input id="message" name="message" placeholder="Write your message.." required>
-
-                            <button type="submit">Send Message</button>
+                            <div class="name-row">
+                                <label for="firstName">First Name</label>
+                                <label for="lastName">Last Name</label>
+                            </div>
+                            <div class="name-input">
+                                <input type="text" class="input-line" id="firstName" name="firstName" required>
+                                <input type="text" class="input-line" id="lastName" name="lastName" required>
+                            </div>
+                            <div class="email-phone-row">
+                                <label for="email">Email</label>
+                                <label for="phoneNumber">Phone Number</label>
+                            </div>
+                            <div class="email-phone-input">
+                                <input type="email" class="input-line" id="email" name="email" required>
+                                <input type="tel" class="input-line" id="phoneNumber" name="phoneNumber">
+                            </div>
+                            <div class="message-row">
+                                <label for="message">Message</label>
+                            </div>
+                            <div class="message-row-input">
+                                <input id="message" class="input-line-message" name="message" placeholder="Write your message.." required>
+                            </div>
+                            <div class="send-message">
+                                <button type="submit" class="send-message-button">Send Message</button>
+                            </div>
                         </form>
-
-                        
-
-
-                    </div>
-                </div>
-            </div>
+                    </div> <!--End of contact-form-->
+                </div> <!--End of contact-form-box-->
+            </div> <!--End of contact-body-container-->
 
             
             <hr class="line">
@@ -125,8 +133,6 @@
             </div>
         </main>
     </body>
-
-
 
 
     <footer>
@@ -166,11 +172,5 @@
                 </ul>
             </div>
         </div>
-
-
-
     </footer>
-
-
-    
 </html>
