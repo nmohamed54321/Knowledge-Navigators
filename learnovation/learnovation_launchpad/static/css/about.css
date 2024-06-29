@@ -1,0 +1,166 @@
+/*General style*/
+* {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*Header style*/
+header {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 0;
+  font-family: "Lato";
+}
+
+.header-text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.header-link{
+  color: #333434;
+}
+
+.site-name {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-title {
+  color: #5C83BF;
+}
+
+.header-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.signup-button {
+  background-color: #7cadf8;
+  border: none;
+  color: white;
+  padding:10px 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.header-img {
+  width: 100%;
+  height: 28%;
+}
+
+/*Main style*/
+main {
+  padding: 10%;
+  font-family: 'Open Sans';
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-section{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+
+.proj-showcase {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.img-bottom {
+  width: 620px;
+  height: 317px;
+}
+
+.text-boxes {
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.main-text-box {
+  background-color: #CEE1FC;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 0 20px 0 20px;
+  flex: 1;
+  align-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+/*Footer style*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #5C83BF;
+  color: #F1F1F2;
+  font-family: "Lato";
+}
+
+.slogan-info-media {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  margin: 30px 0 20px 0;
+}
+
+.social-icons {
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-menu {
+  color: #F1F1F2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 30px 0 auto 0;
+}
+
+.footer-link {
+  color: #F1F1F2;
+}
+
+@media only screen and (max-width: 430px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  }

@@ -1,0 +1,277 @@
+*{
+    font-family: 'Lato', sans-serif; /*Sets the font for the entire page*/
+  }
+  
+  header {
+    display: flex /*Makes the header a flex container*/
+  }
+  
+  
+  a {
+    text-decoration: none; /*Removes underline from links*/
+    margin-right: 40px; /*Adds space between the tabs in the header*/
+  }
+  
+  .header-link{
+    color: black; /*Color the links/tabs in the header*/
+  }
+  
+  .site-name {
+    display: flex; 
+  }
+  
+  .header-title {
+    color: #5C83BF; /*Colors Learnovation Academy*/
+    
+  }
+  
+  .top-nav {
+    display: flex;
+    margin-left: auto; /*Shifts the tabs to the right*/
+  }
+  
+  ul {
+    list-style-type: none; /*Removes bullet points from the list*/
+    margin-right: 30px;  /*Adds space between the tabs in the header*/
+  }
+
+  
+  .header-list {
+    display: inline-block; /*Displays the list items horizontally*/
+  }
+
+  .signup-button {
+    background-color: #7cadf8;
+    border: none;
+    color: white;
+    padding:10px 20px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+
+
+
+
+
+  
+  .contact-header h1 {
+    color: black; /*Sets the text color to black*/
+    text-align: center; /*Aligns the text to the center*/
+  }
+
+
+  .contact-header-img{
+    margin-right: -.5rem;
+    margin-left: -1rem;
+  }
+
+  /*Controls the contact info and the form*/
+  .contact-body-container{
+    padding: 70px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    /*justify-content: space-between;*/
+    /*align-items: flex-start;*/
+  }
+
+
+  .contact-info-box{
+    width: 450px;            /* Width of the box */
+    height: 350px;           /* Height of the box */
+    background-color: #5C83BF; 
+    color: white;             
+    border-radius: 15px;     /* Rounded corners (optional) */
+    /*margin-top: 20px;        /* Spacing between boxes */
+    display: flex;
+  
+  }
+
+  .contact-info h2{
+    margin-left:30px;
+  }
+
+  .contact-info p{
+    margin-left: 30px;
+  }
+
+  /*Edits the form container*/
+  .contact-form-box {
+    width: 450px;            /* Width of the box */
+    height: 350px;           /* Height of the box */
+    color: black;       
+  }
+
+  /*Edits the actual contact form*/
+  .input-line{
+    border:none;
+    outline: none;
+    border-bottom: 1px solid black; /* Add bottom border */
+    width: 40%;
+  }
+
+  .name-row{
+    display: flex;
+    gap: 130px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    /*margin: 20px;*/
+  }
+
+  .name-input{
+    display: flex;
+    gap: 44px;
+    padding-bottom: 20px;
+  }
+
+
+
+
+  .email-phone-row{
+    display: flex;
+    gap: 177px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .email-phone-input{
+    display: flex;
+    gap: 44px;
+    padding-bottom: 20px;
+  }
+
+  .message-row{
+    display: flex;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .message-row-input{
+    display: flex;
+    padding-bottom: 20px;
+  }
+
+  .input-line-message{
+    border:none;
+    outline: none;
+    border-bottom: 1px solid black; /* Add bottom border */
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  .send-message{
+    /*justify-content: right;*/
+    display: grid;
+    justify-content: end; /* Aligns the button to the right */
+    margin-right: 40px;
+    margin-top: 32px;
+  }
+
+  .send-message-button{
+    /*text-align: right;*/
+    background-color: lightskyblue;
+    border: none;
+    color: white;
+    padding:10px 20px;
+    border-radius: 10px;
+  }
+
+
+
+
+
+  /*Edits the line between contact-body-container*/
+  .line{
+    border: none; /* Remove default border */
+    height: .50px; /* Set the height of the line */
+    background-color: lightskyblue;
+    margin: 20px auto; /* Add some margin for spacing */
+    width: 85%; /* Set the width of the line */
+  }
+
+
+
+  /*Newsletter + Button*/
+  .newsletter-container{
+    text-align: center;
+  }
+
+  .newsletter-container p {
+    font-weight: bold;
+  }
+
+  .newsletter-container button {
+    background: linear-gradient(to right,#a75daa,#ac5ea7,#bc6298,#d26988,#da6a7f,#e16d78, #e87071);
+    border: none;
+    color: white;
+    padding:10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 550px; /* Adjust width as needed */
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+
+
+  /*Footer*/
+  footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #5C83BF;
+    color: #F1F1F2;
+    font-family: "Lato";
+  }
+  
+  .slogan-info-media {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+    margin: 30px 0 20px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-menu {
+    color: #F1F1F2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 30px 0 auto 0;
+  }
+  
+  .footer-link {
+    color: #F1F1F2;
+  }
+  
+  @media only screen and (max-width: 430px) {
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    }
+
+ 
+
+ 
+  
+
+
+
+
+
+  
+
