@@ -1,0 +1,142 @@
+*{
+  font-family: 'Lato', sans-serif; /*Sets the font for the entire page*/
+}
+  
+header {
+  display: flex /*Makes the header a flex container*/
+}
+
+
+a {
+  text-decoration: none; /*Removes underline from links*/
+  margin-right: 40px; /*Adds space between the tabs in the header*/
+}
+
+.header-link{
+  color: black; /*Color the links/tabs in the header*/
+}
+
+.site-name {
+  display: flex; 
+}
+
+.header-title {
+  color: #5C83BF; /*Colors Learnovation Academy*/
+  
+}
+
+.top-nav {
+  display: flex;
+  margin-left: auto; /*Shifts the tabs to the right*/
+}
+
+ul {
+  list-style-type: none; /*Removes bullet points from the list*/
+  margin-right: 30px;  /*Adds space between the tabs in the header*/
+}
+
+
+.header-list {
+  display: inline-block; /*Displays the list items horizontally*/
+}
+
+.signup-button {
+  background-color: #7cadf8;
+  border: none;
+  color: white;
+  padding:10px 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+main{
+  display: flex; /*Makes the main section a flex container*/
+  flex-direction: column; /*Aligns the content in the main section vertically*/
+  justify-content: center; /*Centers the content in the main section*/
+  align-items: center; /* Centers the content horizontally */
+  min-height: 100vh; /*Sets the minimum height of the main section to 100% of the viewport height*/
+}
+.login-header h1 {
+  font-size: 35px; /*Sets the font size of the text*/
+  color: black; /*Sets the text color to black*/
+  text-align: center; /*Aligns the text to the center*/
+}
+
+.login-subheader h2 {
+  font-size: 30px; /*Sets the font size of the text*/
+  color: black; /*Sets the text color to black*/
+  text-align: center; /*Aligns the text to the center*/
+  margin-top: 60px; /*Adds space between the header and the subheader*/
+}
+
+.wrapper {
+  width: 624px;
+  display: flex; /*Makes the main section a flex container*/
+  flex-direction: column; /* Aligns the content in the wrapper vertically */
+  align-items: center; /* Centers the content horizontally */
+  min-height: 100vh; /*Sets the minimum height of the main section to 100% of the viewport height*/
+  padding: 60px 0;
+}
+
+.wrapper .input-box{
+  width: 576px;
+  height: 64px;
+  margin-bottom: 47px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 30px;
+  background-color: #EDEFF3;
+  font-size: 20px;
+  color: #00000080;
+  box-sizing: border-box;
+  padding-left: 33px;
+}
+
+.input-box input::placeholder {
+  color: #00000080;
+}
+.wrapper .sign-in{
+  display: flex; /* Ensures the button's content is centered */
+  justify-content: center; /* Centers the button's content horizontally */
+  align-items: center; /* Centers the button's content vertically */
+
+}
+.wrapper .signin-button {
+  background-color: #7cadf8;
+  margin-top: 35px;
+  width: 227px;
+  height: 70px;
+  border: none;
+  border-radius: 30px;
+  font-size: 30px;
+  color: black;
+}
+
+.separator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 32px 0;
+}
+
+.separator hr {
+  width: 292px;
+  border: none;
+  border-top: 1px solid #000;
+}
+
+.separator span {
+  padding: 0 15px;
+  color: #000;
+  font-size: 32px;
+}
+
+.social-icons {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+}
