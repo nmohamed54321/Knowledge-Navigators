@@ -90,7 +90,8 @@
 
                 <div class="contact-form-box">
                     <div class="contact-form">
-                        <form method="post" action="">
+                        <!--The action specifies where the form data should be sent when submitted-->
+                        <form method="post" action="{% url 'contact' %}>
                             {% csrf_token %}
                             <div class="name-row">
                                 <label for="firstName">First Name</label>
