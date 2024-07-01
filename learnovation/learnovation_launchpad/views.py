@@ -16,3 +16,11 @@ def contact(request):
     return render(request, 'contact.html') #This renders the contact.html template
     # If this doesn't work, try: 'learnovation_launchpad/contact.html'
 
+
+def login(request):
+    return render(request, 'login.html') #This renders the login.html template
+    # If this doesn't work, try: 'learnovation_launchpad/login.html'
+
+def signup(request):
+    return render(request, 'signup.html') #This renders the login.html template
+    # If this doesn't work, try: 'learnovation_launchpad/login.html'
