@@ -177,6 +177,8 @@
     color: white;
     padding:10px 20px;
     border-radius: 10px;
+    pointer-events: auto; /* Enable button */
+    cursor: pointer; /* Add cursor on hover */
   }
 
 

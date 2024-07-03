@@ -5,7 +5,7 @@ from . import views
 # urls.py and the views.py files in the learnovation_launchpad directory.
 
 urlpatterns = [
-    path('', views.home, name='home'), #Home Page View
+    path('', views.home, name='home'), #Landing/Home Page View
     path('about/', views.about, name='about'), #About Page View
     path('contact/', views.contact, name='contact'), #Contact Page View
     path('login/', views.login, name='login'), #Login Page View
