@@ -5,13 +5,12 @@ from .models import ContactForm
 # This file renders all of the templates 
 
 def home(request):
-    return HttpResponse('Hello, World!') 
-    #return render(request, 'home.html') #This renders the home.html template
-    # If this doesn't work, try: 'learnovation_launchpad/home.html'
+    return render(request, 'index.html')
+    
 
 def about(request):
-    return render(request, 'about.html') #This renders the about.html template
-    # If this doesn't work, try: 'learnovation_launchpad/about.html'
+    return render(request, 'about.html') 
+
 
 def contact(request):
     if request.method == 'POST':
