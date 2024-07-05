@@ -3,6 +3,7 @@
   margin: 0;
   font-family: 'Lato', sans-serif; /*Sets the font for the entire page*/
 }
+
 a {
   text-decoration: none; /*Removes underline from links*/
 }
@@ -89,7 +90,7 @@ main {
   text-align: center;
   justify-content: center;
   border-radius: 10px 10px 0 0;
-  padding: 0 20px 0 20px;
+  padding: 50px 20px 100px 50px; /*top, left, bottom, right sides*/
 }
 
 .personal-details-box{
@@ -99,7 +100,7 @@ main {
   text-align: center;
   justify-content: center;
   border-radius: 10px;
-  padding: 0 20px 0 20px;
+  padding: 20px 30px 20px 30px;
 }
 
 .personal-details-title{
@@ -121,6 +122,35 @@ main {
   border-radius: 20px;
 }
 
+.projects-box{
+  background-color: #5C83BF;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px 30px 20px 30px;  
+}
+
+.work-history-box{
+  background-color: #5C83BF;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px 30px 20px 30px;
+}
+
+.education-box{
+  background-color: #5C83BF;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px 30px 20px 30px;
+}
 
 
 
