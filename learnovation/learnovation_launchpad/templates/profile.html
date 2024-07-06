@@ -54,29 +54,39 @@
         </header>
         <main>
             <div class="blue-background">
-                <div class="personal-details-box">
-                    <span class="personal-details-title">Personal Details</span>
-                    <img src="../static/images/pencil-icon.png" class="pencil-icon" width="10px" height="10px"><!--pencil-icon-->
-                    <img src="../static/images/emily-kara-pic.png" class="emily-kara-pic" width="30px" height="30px"><!--emily-kara-pic-->
-                    <span class="profile-name">Emily Kara</span> <!--Here, instead of the name, there shoulde be a variable, so the name changes automaticaly.-->
-                    <input id="share" type="button" value="Share Profile Link" class="share-profile-link"> <!--Check if the ID is correct/possible-->
-                </div>
-                <div class="project-work-history">
-                    <div class="projects-box">
-                        <span class="projects">Projects</span>
-                        <img src="../static/images/pencil-icon.png" class="pencil-icon" width="10px" height="10px"><!--pencil-icon-->
-                        <input id="projects" type="text" placeholder="Showcase your projects here"> <!--Text box or dropdown menu?-->
+                <div class="upper-boxes">
+                    <div class="personal-details-box">
+                        <div class="box-header">
+                            <span class="personal-details-title">Personal Details</span>
+                            <img src="../static/images/pencil-icon.png" class="pencil-icon"><!--pencil-icon-->
+                        </div>
+                        <img src="../static/images/emily-kara-pic.png" class="emily-kara-pic" ><!--emily-kara-pic-->
+                        <span class="profile-name">Emily Kara</span> <!--Here, instead of the name, there shoulde be a variable, so the name changes automaticaly.-->
+                        <input id="share" type="button" value="Share Profile Link" class="share-profile-link"> <!--Check if the ID is correct/possible-->
                     </div>
-                    <div class="work-history-box">
-                        <span class="work-history">Work History</span>
-                        <img src="../static/images/pencil-icon.png" class="pencil-icon" width="10px" height="10px"><!--pencil-icon-->
-                        <input id="work-history type="text" placeholder="Add work experience here"> <!--Text box-->
+                    <div class="project-work-history">
+                        <div class="projects-box">
+                            <div class="box-header">
+                                <span class="projects">Projects</span>
+                                <img src="../static/images/pencil-icon.png" class="pencil-icon" width="10px" height="10px"><!--pencil-icon-->
+                            </div>
+                            <input id="projects" type="text" placeholder="Showcase your projects here" class="textbox-main"> <!--Text box or dropdown menu?-->
+                        </div>
+                        <div class="work-history-box">
+                            <div class="box-header">
+                                <span class="work-history">Work History</span>
+                                <img src="../static/images/pencil-icon.png" class="pencil-icon" width="10px" height="10px"><!--pencil-icon-->
+                            </div>
+                            <input id="work-history type="text" placeholder="Add work experience here" class="textbox-main"> <!--Text box-->
+                        </div>
                     </div>
                 </div>
                 <div class="education-box">
-                    <span class="education">Education</span>
-                    <img src="../static/images/pencil-icon.png" class="pencil-icon" width="10px" height="10px"><!--pencil-icon-->
-                    <input id="education" type="text" placeholder="Add Education here"> <!--Text box-->
+                    <div class="box-header">
+                        <span class="education">Education</span>
+                        <img src="../static/images/pencil-icon.png" class="pencil-icon" width="10px" height="10px"><!--pencil-icon-->
+                    </div>
+                    <input id="education" type="text" placeholder="Add Education here" class="textbox-main"> <!--Text box-->
                 </div>
             </div>
         </main>
