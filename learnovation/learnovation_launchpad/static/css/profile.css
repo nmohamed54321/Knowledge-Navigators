@@ -83,25 +83,31 @@ main {
 
 .blue-background{
   background-color: #CEE1FC;
-  width: auto;
+  width: 1440px;
   height: auto;
   text-align: center;
-  justify-content: center;
+  justify-content: centr;
   border-radius: 10px 10px 0 0;
   padding: 50px 100px 100px 100px; /*top, left, bottom, right sides*/
   display: flex;
   flex-flow: column wrap;
-  gap: 10px;
+  gap: 40px;
 }
 
 .upper-boxes {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  gap: 40px;
 }
 
 .textbox-main{
   background-color: #EAEBEC;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 10px;
+  width: 100%;
 }
 
 
@@ -117,6 +123,7 @@ main {
   align-items: center;
   border-radius: 10px;
   padding: 20px 30px 20px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166);
 }
 
 .box-header{ /*It's the same for all the boxes*/
@@ -161,32 +168,33 @@ main {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   font-size: 15px;
   color: #F1F1F2;
-  gap: 50px;
+  gap: 40px;
+  flex: 1;
 }
 
 .projects-box{
   background-color: #5C83BF;
-  width: auto;
-  height: auto;
   text-align: center;
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
-  padding: 20px 30px 20px 30px;  
+  padding: 20px 50px 20px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166); 
+  flex: 1; 
 }
 
 .work-history-box{
   background-color: #5C83BF;
-  width: auto;
-  height: auto;
   text-align: center;
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
-  padding: 20px 30px 20px 30px;
+  padding: 20px 50px 20px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166);
+  flex: 1;
 }
 
 /*Education box*/
@@ -200,7 +208,8 @@ main {
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
-  padding: 20px 30px 20px 30px;
+  padding: 20px 50px 30px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166);
 }
 
 
