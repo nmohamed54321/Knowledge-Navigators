@@ -61,15 +61,55 @@ header {
   gap: 50px; /*Sets the gap between the items of the list*/
 }
 
-.signup-button {
-  background-color: #7cadf8;
-  border: none;
-  color: white;
-  padding:10px 30px;
-  text-align: center;
-  border-radius: 20px;
+.notification-buttom{
+  width: 20px;
+  height: 20px;
 }
 
+.user-menu {
+  border-style: solid;
+  border-color: #EAEBEC;
+  padding:10px;
+  text-align: center;
+  border-radius: 30px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.user-avatar{
+  width: 30px;
+  height: 30px;
+}
+
+.user-info{
+  display: flex;
+  flex-flow: column;
+  font-size: 15px;
+}
+
+.user-name{
+  color: #333434;
+}
+
+.user-title{
+  color: lightgray;
+}
+
+.search-box{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.textbox-search {
+  background-color: #EAEBEC;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 10px;
+  width: 50%;
+}
 
 
 /*Main style*/
@@ -78,17 +118,29 @@ main {
   font-family: 'Open Sans';
   font-size: 20pt;
   display: flex;
+  flex-flow: column;
   justify-content: center;
+  align-items: center;
+}
+
+.welcome-banner{
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 1163px; /*This size worked so the blue background fits the entire page width*/
 }
 
 .blue-background{
   background-color: #CEE1FC;
-  width: 1440px;
+  width: 1163px; /*This size worked so the blue background fits the entire page width*/
   height: auto;
   text-align: center;
-  justify-content: centr;
+  justify-content: center;
   border-radius: 10px 10px 0 0;
-  padding: 50px 100px 100px 100px; /*top, left, bottom, right sides*/
+  padding: 100px 50px 100px 50px; /*top, left, bottom, right sides*/
   display: flex;
   flex-flow: column wrap;
   gap: 40px;

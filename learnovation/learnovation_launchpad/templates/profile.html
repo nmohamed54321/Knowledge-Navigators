@@ -44,15 +44,29 @@
                             <li class="header-list">
                                 <a href="About" class="header-link">About</a>
                                 <a href="Courses" class="header-link">Courses</a>
-                                <a href="Login" class="header-link">Login</a>
-                                <input id="submit" type="button" value="Sign up" class="signup-button">
+                                <img src="../static/images/bell-notification.svg" alt="notification buttom" class="notification-buttom">
+                                <div class="user-menu">
+                                   <img src="../static/images/emily-kara-pic.png" class="user-avatar">
+                                   <div class="user-info">
+                                    <span class="user-name">Emily Kara</span>
+                                    <span class="user-title">UX Designer</span>
+                                   </div>
+                                </div>
+                                <a href="Logout" class="header-link">Logout</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
+            <div class="search-box">
+                <input id="search-box" type="text" placeholder="Search" class="textbox-search">                
+            </div>
         </header>
         <main>
+            <div class="welcome-banner">
+                <span class="welcome-message">Welcome Back Emily!</span><!--"Emily" should be replaced with a variable, so it automatically changes according to the user name-->
+                <span class="path-message">Your career path is __________.</span>
+            </div>
             <div class="blue-background">
                 <div class="upper-boxes">
                     <div class="personal-details-box">
@@ -77,7 +91,7 @@
                                 <span class="work-history">Work History</span>
                                 <img src="../static/images/pencil-icon.png" class="pencil-icon" width="10px" height="10px"><!--pencil-icon-->
                             </div>
-                            <input id="work-history type="text" placeholder="Add work experience here" class="textbox-main"> <!--Text box-->
+                            <input id="work-history" type="text" placeholder="Add work experience here" class="textbox-main"> <!--Text box-->
                         </div>
                     </div>
                 </div>
