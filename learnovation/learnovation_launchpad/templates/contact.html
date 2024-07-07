@@ -78,11 +78,11 @@
                         </p>
                         <p>
                             <img src="../static/images/phone-icon.png" alt="phone" width="20" height="20">
-                            <span>    +1 234 567 890</span>
+                            <span>    +1 979 567 8990</span>
                         </p>
                         <p>
                             <img src="../static/images/mail-icon.png" alt="email" width="20" height="20">
-                            <span>demo@gmail.com</span>
+                            <span>info@learnovationacademy.com</span>
                         </p>
                     </div>
                 </div> <!--End of contact-info-box-->
@@ -91,7 +91,7 @@
                 <div class="contact-form-box">
                     <div class="contact-form">
                         <!--The action specifies where the form data should be sent when submitted-->
-                        <form method="post" action="{% url 'contact' %}>
+                        <form method="post">
                             {% csrf_token %}
                             <div class="name-row">
                                 <label for="firstName">First Name</label>
@@ -107,7 +107,7 @@
                             </div>
                             <div class="email-phone-input">
                                 <input type="email" class="input-line" id="email" name="email" required>
-                                <input type="tel" class="input-line" id="phoneNumber" name="phoneNumber">
+                                <input type="tel" class="input-line" id="phoneNumber" name="phoneNumber" required>
                             </div>
                             <div class="message-row">
                                 <label for="message">Message</label>
@@ -119,6 +119,20 @@
                                 <button type="submit" class="send-message-button">Send Message</button>
                             </div>
                         </form>
+
+                        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                        {% if messages %}
+                            {% for message in messages %}
+                                <script>
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Thank You',
+                                        text: '{{ message }}',
+                                        confirmButtonColor: '#5C83BF',
+                                    });
+                                </script>
+                            {% endfor %}
+                        {% endif %}
                     </div> <!--End of contact-form-->
                 </div> <!--End of contact-form-box-->
             </div> <!--End of contact-body-container-->
