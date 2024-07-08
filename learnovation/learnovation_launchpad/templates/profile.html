@@ -44,36 +44,63 @@
                             <li class="header-list">
                                 <a href="About" class="header-link">About</a>
                                 <a href="Courses" class="header-link">Courses</a>
-                                <a href="Login" class="header-link">Login</a>
-                                <input id="submit" type="button" value="Sign up" class="signup-button">
+                                <img src="../static/images/bell-notification.svg" alt="notification buttom" class="notification-buttom">
+                                <div class="user-menu">
+                                   <img src="../static/images/emily-kara-pic.png" class="user-avatar">
+                                   <div class="user-info">
+                                    <span class="user-name">Emily Kara</span>
+                                    <span class="user-title">UX Designer</span>
+                                   </div>
+                                </div>
+                                <a href="Logout" class="header-link">Logout</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
+            <div class="search-box">
+                <input id="search-box" type="text" placeholder="Search" class="textbox-search">                
+            </div>
         </header>
         <main>
-<!-- Complete the main part of the page-->
+            <div class="welcome-banner">
+                <span class="welcome-message">Welcome Back Emily!</span><!--"Emily" should be replaced with a variable, so it automatically changes according to the user name-->
+                <span class="path-message">Your career path is __________.</span>
+            </div>
             <div class="blue-background">
-                <div class="personal-details-box">
-                    <span class="">Personal Details</span>
-                    <img src="personal-details">
-                    <span class="profile-name">Emily Kars</span> <!--Here, instead of the name, there shoulde be a variable, so the name changes automaticaly.-->
-                    <input id="share" type="button" value="Share Profile Link" class="share-profile-link"> <!--Check if the ID is correct/possible-->
-                </div>
-                <div class="project-work-history">
-                    <div class="projects-box">
-                        <span class="projects">Projects</span>
-                        <input> <!--Text box or dropdown menu?-->
+                <div class="upper-boxes">
+                    <div class="personal-details-box">
+                        <div class="box-header">
+                            <span class="personal-details-title">Personal Details</span>
+                            <img src="../static/images/pencil-icon.png" class="pencil-icon"><!--pencil-icon-->
+                        </div>
+                        <img src="../static/images/emily-kara-pic.png" class="emily-kara-pic" ><!--emily-kara-pic-->
+                        <span class="profile-name">Emily Kara</span> <!--Here, instead of the name, there shoulde be a variable, so the name changes automaticaly.-->
+                        <input id="share" type="button" value="Share Profile Link" class="share-profile-link"> <!--Check if the ID is correct/possible-->
                     </div>
-                    <div class="work-history-box">
-                        <span class="work-history">Work History</span>
-                        <input> <!--Text box-->
+                    <div class="project-work-history">
+                        <div class="projects-box">
+                            <div class="box-header">
+                                <span class="projects">Projects</span>
+                                <img src="../static/images/pencil-icon.png" class="pencil-icon" width="10px" height="10px"><!--pencil-icon-->
+                            </div>
+                            <input id="projects" type="text" placeholder="Showcase your projects here" class="textbox-main"> <!--Text box or dropdown menu?-->
+                        </div>
+                        <div class="work-history-box">
+                            <div class="box-header">
+                                <span class="work-history">Work History</span>
+                                <img src="../static/images/pencil-icon.png" class="pencil-icon" width="10px" height="10px"><!--pencil-icon-->
+                            </div>
+                            <input id="work-history" type="text" placeholder="Add work experience here" class="textbox-main"> <!--Text box-->
+                        </div>
                     </div>
                 </div>
                 <div class="education-box">
-                    <span class="education">Education</span>
-                    <input> <!--Text box-->
+                    <div class="box-header">
+                        <span class="education">Education</span>
+                        <img src="../static/images/pencil-icon.png" class="pencil-icon" width="10px" height="10px"><!--pencil-icon-->
+                    </div>
+                    <input id="education" type="text" placeholder="Add Education here" class="textbox-main"> <!--Text box-->
                 </div>
             </div>
         </main>

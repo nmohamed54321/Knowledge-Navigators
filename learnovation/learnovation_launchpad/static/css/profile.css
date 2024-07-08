@@ -3,6 +3,7 @@
   margin: 0;
   font-family: 'Lato', sans-serif; /*Sets the font for the entire page*/
 }
+
 a {
   text-decoration: none; /*Removes underline from links*/
 }
@@ -60,30 +61,208 @@ header {
   gap: 50px; /*Sets the gap between the items of the list*/
 }
 
-.signup-button {
+.notification-buttom{
+  width: 20px;
+  height: 20px;
+}
+
+.user-menu {
+  border-style: solid;
+  border-color: #EAEBEC;
+  padding:10px;
+  text-align: center;
+  border-radius: 30px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.user-avatar{
+  width: 30px;
+  height: 30px;
+}
+
+.user-info{
+  display: flex;
+  flex-flow: column;
+  font-size: 15px;
+}
+
+.user-name{
+  color: #333434;
+}
+
+.user-title{
+  color: lightgray;
+}
+
+.search-box{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.textbox-search {
+  background-color: #EAEBEC;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 10px;
+  width: 50%;
+}
+
+
+/*Main style*/
+main {
+  padding: 0;
+  font-family: 'Open Sans';
+  font-size: 20pt;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-banner{
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 1163px; /*This size worked so the blue background fits the entire page width*/
+}
+
+.blue-background{
+  background-color: #CEE1FC;
+  width: 1163px; /*This size worked so the blue background fits the entire page width*/
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  padding: 100px 50px 100px 50px; /*top, left, bottom, right sides*/
+  display: flex;
+  flex-flow: column wrap;
+  gap: 40px;
+}
+
+.upper-boxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.textbox-main{
+  background-color: #EAEBEC;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 10px;
+  width: 100%;
+}
+
+
+/*Personal Details box*/
+.personal-details-box{
+  background-color: #5C83BF;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px 30px 20px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166);
+}
+
+.box-header{ /*It's the same for all the boxes*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 50px;
+}
+
+.emily-kara-pic{
+  width: 50px;
+  height: 50px;
+}
+
+.pencil-icon{
+  width: 10px;
+  height: 10px;
+}
+
+.personal-details-title{
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.profile-name{
+  font-size: 10px;
+  color: #FFFFFF;
+}
+
+.share-profile-link{
   background-color: #7cadf8;
   border: none;
-  color: white;
+  color: #FFFFFF;
   padding:10px 30px;
   text-align: center;
   border-radius: 20px;
 }
 
-
-
-/*Main style*/
-main {
-  padding: 0px;
-  font-family: 'Open Sans';
-  font-size: 20pt;
+/*Projects and Work History boxes*/
+.project-work-history{
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+  justify-content: space-around;
+  align-items: stretch;
+  font-size: 15px;
+  color: #F1F1F2;
+  gap: 40px;
+  flex: 1;
 }
 
+.projects-box{
+  background-color: #5C83BF;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px 50px 20px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166); 
+  flex: 1; 
+}
 
+.work-history-box{
+  background-color: #5C83BF;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px 50px 20px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166);
+  flex: 1;
+}
+
+/*Education box*/
+.education-box{
+  background-color: #5C83BF;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 15px;
+  color: #F1F1F2;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px 50px 30px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166);
+}
 
 
 
