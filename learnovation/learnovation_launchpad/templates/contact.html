@@ -1,191 +1,102 @@
-<!DOCTYPE html>
+{% extends 'headerfooterbase.html' %}
 
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="../static/images/la-logo.png" type="image/png" sizes="320x320">
-        <title>Learnovation</title>
-        <link rel="stylesheet" type="text/css" href="../static/css/contact.css">
-        <!--Main Fonts-->
-        <!--Lato-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        <!--Open Sans-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">       
-        <!--Alternative Fonts-->
-        <!--Inter-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <!--Montserrat-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <!--PT Sans-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <!--Source Sans Pro-->
-    </head>
+<!--Get's include in the base header and footer to get styles-->
+{% block extra_head %}
+<link rel="stylesheet" href="../static/css/contact.css">
+{% endblock %}
 
-    <body>
-        <header>
-            <div class="site-name">
-                <img src="../static/images/la-logo.png" alt="logo" width="70px" height="70px">
-                <h2 class="header-title">Learnovation Academy</h2>
+{% block content %}
+<main>
+    <div class="contact-header">
+        <h1>Contact Us</h1>
+    </div>
+    
+
+    <div class="contact-header-img">
+        <img src="../static/images/contact-banner.png" alt="contact banner" width="100%" height="30%">
+    </div>
+
+
+    <div class="contact-body-container">
+        <div class="contact-info-box">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>
+                    We value your feedback and inquiries. Whether you<br>
+                    have a question about our services, need
+                    assistance,<br> or want to share your thoughts, we're<br>
+                    here to help. Please use the following Information,<br>
+                    to get in touch with us:
+                </p>
+                <p>
+                    <img src="../static/images/phone-icon.png" alt="phone" width="20" height="20">
+                    <span>    +1 979 567 8990</span>
+                </p>
+                <p>
+                    <img src="../static/images/mail-icon.png" alt="email" width="20" height="20">
+                    <span>info@learnovationacademy.com</span>
+                </p>
             </div>
-            <div class="top-nav">
-                <nav class="nav-bar">
-                    <ul class="header-list">
-                        <li>
-                            <a href="{% url 'about' %}" class="header-link">About</a>
-                            <a href="Courses" class="header-link">Courses</a>
-                            <a href="{% url 'login' %}" class="header-link">Login</a>
-                            <input id="submit" type="button" value="Sign up" class="signup-button">
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        </div> <!--End of contact-info-box-->
 
 
-
-        <main>
-            <div class="contact-header">
-                <h1>Contact Us</h1>
-            </div>
-            
-
-            <div class="contact-header-img">
-                <img src="../static/images/contact-banner.png" alt="contact banner" width="100%" height="30%">
-            </div>
-
-
-            <div class="contact-body-container">
-                <div class="contact-info-box">
-                    <div class="contact-info">
-                        <h2>Contact Information</h2>
-                        <p>
-                            We value your feedback and inquiries. Whether you<br>
-                            have a question about our services, need
-                            assistance,<br> or want to share your thoughts, we're<br>
-                            here to help. Please use the following Information,<br>
-                            to get in touch with us:
-                        </p>
-                        <p>
-                            <img src="../static/images/phone-icon.png" alt="phone" width="20" height="20">
-                            <span>    +1 979 567 8990</span>
-                        </p>
-                        <p>
-                            <img src="../static/images/mail-icon.png" alt="email" width="20" height="20">
-                            <span>info@learnovationacademy.com</span>
-                        </p>
+        <div class="contact-form-box">
+            <div class="contact-form">
+                <!--The action specifies where the form data should be sent when submitted-->
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="name-row">
+                        <label for="firstName">First Name</label>
+                        <label for="lastName">Last Name</label>
                     </div>
-                </div> <!--End of contact-info-box-->
+                    <div class="name-input">
+                        <input type="text" class="input-line" id="firstName" name="firstName" required>
+                        <input type="text" class="input-line" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="email-phone-row">
+                        <label for="email">Email</label>
+                        <label for="phoneNumber">Phone Number</label>
+                    </div>
+                    <div class="email-phone-input">
+                        <input type="email" class="input-line" id="email" name="email" required>
+                        <input type="tel" class="input-line" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                    <div class="message-row">
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="message-row-input">
+                        <input id="message" class="input-line-message" name="message" placeholder="Write your message.." required>
+                    </div>
+                    <div class="send-message">
+                        <button type="submit" class="send-message-button">Send Message</button>
+                    </div>
+                </form>
 
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                {% if messages %}
+                    {% for message in messages %}
+                        <script>
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Thank You',
+                                text: '{{ message }}',
+                                confirmButtonColor: '#5C83BF',
+                            });
+                        </script>
+                    {% endfor %}
+                {% endif %}
+            </div> <!--End of contact-form-->
+        </div> <!--End of contact-form-box-->
+    </div> <!--End of contact-body-container-->
 
-                <div class="contact-form-box">
-                    <div class="contact-form">
-                        <!--The action specifies where the form data should be sent when submitted-->
-                        <form method="post">
-                            {% csrf_token %}
-                            <div class="name-row">
-                                <label for="firstName">First Name</label>
-                                <label for="lastName">Last Name</label>
-                            </div>
-                            <div class="name-input">
-                                <input type="text" class="input-line" id="firstName" name="firstName" required>
-                                <input type="text" class="input-line" id="lastName" name="lastName" required>
-                            </div>
-                            <div class="email-phone-row">
-                                <label for="email">Email</label>
-                                <label for="phoneNumber">Phone Number</label>
-                            </div>
-                            <div class="email-phone-input">
-                                <input type="email" class="input-line" id="email" name="email" required>
-                                <input type="tel" class="input-line" id="phoneNumber" name="phoneNumber" required>
-                            </div>
-                            <div class="message-row">
-                                <label for="message">Message</label>
-                            </div>
-                            <div class="message-row-input">
-                                <input id="message" class="input-line-message" name="message" placeholder="Write your message.." required>
-                            </div>
-                            <div class="send-message">
-                                <button type="submit" class="send-message-button">Send Message</button>
-                            </div>
-                        </form>
+    
+    <hr class="line">
+  
 
-                        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-                        {% if messages %}
-                            {% for message in messages %}
-                                <script>
-                                    Swal.fire({
-                                        icon: 'success',
-                                        title: 'Thank You',
-                                        text: '{{ message }}',
-                                        confirmButtonColor: '#5C83BF',
-                                    });
-                                </script>
-                            {% endfor %}
-                        {% endif %}
-                    </div> <!--End of contact-form-->
-                </div> <!--End of contact-form-box-->
-            </div> <!--End of contact-body-container-->
-
-            
-            <hr class="line">
-          
-
-            <div class="newsletter-container">
-                <h1>Join Our Newsletter</h1>
-                <p>Subscribe to the Learnovation newsletter. Get the latest courses and updates!</p>
-                <button class="sub-button">Subscribe</button>
-            </div>
-        </main>
-    </body>
-
-
-    <footer>
-        <div class="slogan-info-media">
-            <div class="slogan-info">
-                <h1>Breaking boundaries</h1>
-                <h3>Learnovation Academy 2024 ©</h3>
-            </div>
-            <div class="social-icons">
-                <img src="../static/images/fb_1.png" alt="Facebook" width="27" height="27">
-                <img src="../static/images/in.png" alt="LinkedIn" width="27" height="27">
-                <img src="../static/images/twitterx.png" alt="X" width="27" height="27">
-            </div>
-            <div class="footer-img">
-            <img src="../static/images/la-logo.png" alt="logo" width="60px" height="60px">
-            </div>
-        </div>
-        <div class="footer-menu">
-            <div class="footer-about">
-                <ul>
-                    <li><a href="{% url 'about' %}" class="footer-link">About</a></li>
-                    <li><a href="Who we are" class="footer-link">Who we are</a></li>
-                    <li><a href="{% url 'contact' %}" class="footer-link">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-joinus">
-                <ul>
-                    <li><a href="Join Us" class="footer-link">Join Us</a></li>
-                    <li><a href="{% url 'login' %}" class="footer-link">Login</a></li>
-                    <li><a href="{% url 'signup' %}" class="footer-link">Signup</a></li>
-                </ul>
-            </div>
-            <div class="footer-explore">
-                <ul>
-                    <li><a href="Explore" class="footer-link">Explore</a></li>
-                    <li><a href="Courses" class="footer-link">Courses</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</html>
+    <div class="newsletter-container">
+        <h1>Join Our Newsletter</h1>
+        <p>Subscribe to the Learnovation newsletter. Get the latest courses and updates!</p>
+        <button class="sub-button">Subscribe</button>
+    </div>
+</main>
+{% endblock %}
