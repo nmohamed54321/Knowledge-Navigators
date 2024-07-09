@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../static/images/la-logo.png" type="image/png" sizes="320x320">
+        <title>Learnovation</title>
+        <link rel="stylesheet" href="../static/css/headerfooter.css">
+        {% block extra_head %}
+        <!-- Additional head content can be injected here. For other css files -->
+        {% endblock %}
+    </head>
+    <body>
+        <!-- Logo + navbar -->
+        <header id="navbar">
+            <nav class="navbar-container">
+                <!-- Logo -->
+                <div class="logo-container img-align-container">
+                    <!-- Logo picture -->
+                    <a href="{% url 'home' %}"><img class="navbar-logo" src="../static/images/landing-page/logo.svg" alt="Learnovation logo"></a>
+                    
+                    <!-- Logo text -->
+                    <a href="{% url 'home' %}"><h1 class="logo-text">Learnovation Academy</h1></a>
+                </div>
+
+                <!-- Navigation -->
+                <div class="nav">
+                    <a href="{% url 'about' %}" class="navbar-item">About</a>
+                    <a href="#" class="navbar-item">Courses</a>
+                    <a href="{% url 'login' %}" class="navbar-item">Login</a>
+                    <a href="{% url 'signup' %}" class="navbar-item button button-sign-up">Sign up</a>
+                </div>
+            </nav>
+        </header>
+
+        {% block content %}
+        <!-- Page-specific content will be injected here -->
+        {% endblock %}
+
+        <!-- Footer -->
+        <footer id="footer-container" class="full-width">
+            <!-- Tagline column -->
+            <div>
+                <p class="footer-tagline">Breaking boundaries</p>
+                <p class="footer-copyright">Learnovation Academy 2024 ©</p>
+    
+                <!-- Social media -->
+                <div class="content-row footer-social-media">
+                    <a href="#"><img class="footer-social-media-icon" src="../static/images/landing-page/fb-icon.svg" alt="Facebook icon"></a>
+                    <a href="#"><img class="footer-social-media-icon" src="../static/images/landing-page/linkedin-icon.svg" alt="LinkedIn icon"></a>
+                    <a href="#"><img class="footer-social-media-icon" src="../static/images/landing-page/twitterx-icon.svg" alt="X, formerly Twitter, icon"></a>
+                </div>
+    
+                <!-- Logo -->
+                <img class="footer-logo" src="../static/images/landing-page/logo.svg" alt="Learnovation logo">
+            </div>
+            
+            <!-- About column -->
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="{% url 'about' %}" class="footer-nav-header">About</a></li>
+                    <li class="footer-nav-item-middle-spacing"><a href="#" class="footer-nav-items">Who we are</a></li>
+                    <li><a href="{% url 'contact' %}" class="footer-nav-items">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Join us column -->
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#" class="footer-nav-header">Join us</a></li>
+                    <li class="footer-nav-item-middle-spacing"><a href="{% url 'login' %}" class="footer-nav-items">Login</a></li>
+                    <li><a href="{% url 'signup' %}" class="footer-nav-items">Signup</a></li>
+                </ul>
+            </div>
+
+            <!-- Explore column -->
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#" class="footer-nav-header">Explore</a></li>
+                    <li class="footer-nav-item-middle-spacing"><a href="#" class="footer-nav-items footer-nav-item-middle-spacing">Courses</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

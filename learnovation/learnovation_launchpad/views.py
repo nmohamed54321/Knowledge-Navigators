@@ -45,4 +45,7 @@ def login(request):
 
 def signup(request):
     return render(request, 'signup.html') #This renders the signup template
+
+def profile(request):
+    return render(request, 'profile.html') #This renders the profile template
     
