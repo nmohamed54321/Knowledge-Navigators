@@ -33,10 +33,13 @@ class SignUpForm(UserCreationForm):
             'id':'password1',
             'type':'password',
             'placeholder':'Create password',
-            'maxlength': '16',
-            'minlength': '6',
+            'maxlength': '22',
+            'minlength': '8',
             })
+        del self.fields['password2']
 
     class Meta: 
         model = User 
-        fields = ('username', 'email', 'password1', )
+        fields = ('username', 'email', 'password1')
+        
+    

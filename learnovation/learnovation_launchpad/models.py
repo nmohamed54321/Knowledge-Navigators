@@ -13,4 +13,11 @@ class ContactForm(models.Model):
         return f"{self.firstName} {self.lastName}"
 
 
+#Model created to save submitted signup form
+class SignUp(models.Model):
+    username = models.CharField(max_length=16)
+    email = models.EmailField()
+    password = models.CharField(max_length=16)
 
+    def __str__(self):
+        return f"{self.username} {self.email}"
