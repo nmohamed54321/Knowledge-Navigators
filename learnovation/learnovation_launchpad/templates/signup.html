@@ -58,18 +58,22 @@
             </div>
             <div class="wrapper">
                 <div>
-                    <form action="/sign-up" method="POST">
+                    <form action="." method="POST">
+                        {% csrf_token %} 
                         <div class="input-box">
-                            <label for="name">FULL NAME</label>
-                            <input type="text" id="name" placeholder="Enter your name" required>
+                            <label for="username">FULL NAME</label>
+                            {{form.username}}
+                            <!-- <input required name="username" type="text" id="username" placeholder="Enter your name" maxlength="16" minlength="6"> -->
                         </div>
                         <div class="input-box">
                             <label for="email">EMAIL</label>
-                            <input type="text" id="email" placeholder="@email.com" required>
+                            {{form.email}}
+                            <!-- <input required name="email" type="email" id="email" placeholder="@email.com" maxlength="16" minlength="8"> -->
                         </div>
                         <div class="input-box">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" placeholder="Create Password" required>
+                            <label for="password1">PASSWORD</label>
+                            {{form.password1}}
+                            <!-- <input required name="password1" type="password" id="password" placeholder="Create Password" maxlength="16" minlength="8"> -->
                         </div>
                         <div class="sign-in">
                             <button type="submit" class="signup-button">Sign up</button>
@@ -121,7 +125,8 @@
                     </button>
                 </div>
             </div>
-            <span class="account-check"> Already have an account? Sign in</span>
+            <span class="account-check" href="login.html"> Already have an account? Sign in</span>
         </main>
     </body>
 </html>
+
