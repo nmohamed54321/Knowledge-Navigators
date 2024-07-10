@@ -100,17 +100,25 @@ header {
 .search-box{
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
 .textbox-search {
   background-color: #EAEBEC;
   border: 0;
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 10px 10px 30px;
   font-size: 10px;
   width: 50%;
+  outline: none;
 }
 
+.magnifier {
+  position: absolute;
+  right: 51%;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 /*Main style*/
 main {
@@ -167,7 +175,7 @@ main {
 .personal-details-box{
   background-color: #5C83BF;
   width: 200px;
-  height: 200px;
+  height: 250px;
   text-align: center;
   display: flex;
   flex-flow: column wrap;
@@ -182,13 +190,14 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 50px;
+  margin-bottom: 15px;
 }
 
 .emily-kara-pic{
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 .pencil-icon{
@@ -227,6 +236,10 @@ main {
   flex: 1;
 }
 
+.project-work-history input{
+  height: 20px;
+}
+
 .projects-box{
   background-color: #5C83BF;
   text-align: center;
@@ -235,7 +248,7 @@ main {
   border-radius: 10px;
   padding: 20px 50px 20px 30px;
   box-shadow: 10px 5px 5px rgb(167, 166, 166); 
-  flex: 1; 
+  flex: 1;
 }
 
 .work-history-box{
@@ -264,7 +277,9 @@ main {
   box-shadow: 10px 5px 5px rgb(167, 166, 166);
 }
 
-
+.education-box input{
+  height: 20px;
+}
 
 /*Footer style*/
 footer {
