@@ -1,0 +1,359 @@
+/*General style*/
+* {
+  margin: 0;
+  font-family: 'Lato', sans-serif; /*Sets the font for the entire page*/
+}
+
+a {
+  text-decoration: none; /*Removes underline from links*/
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+
+/*Header style*/
+header {
+  display: flex;  /*Makes the header a flex container*/
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.header-text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.header-link{
+  color: #333434; /*Color of the links/tabs in the header*/
+}
+
+.site-name {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-title {
+  color: #5C83BF; /*Color of Learnovation Academy*/
+}
+
+.top-nav {
+  display: flex;
+  margin-left: auto; /*Shifts the tabs to the right*/
+}
+
+.header-list {
+  display: inline-flex; /*Displays the list items horizontaly, but in flexbox*/
+  align-content: space-around;
+  align-items: center;
+  gap: 50px; /*Sets the gap between the items of the list*/
+}
+
+.notification-buttom{
+  width: 20px;
+  height: 20px;
+}
+
+.user-menu {
+  border-style: solid;
+  border-color: #EAEBEC;
+  padding:10px;
+  text-align: center;
+  border-radius: 30px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.user-avatar{
+  width: 30px;
+  height: 30px;
+}
+
+.user-info{
+  display: flex;
+  flex-flow: column;
+  font-size: 15px;
+}
+
+.user-name{
+  color: #333434;
+}
+
+.user-title{
+  color: lightgray;
+}
+
+.search-box{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.textbox-search {
+  background-color: #EAEBEC;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 10px 10px 30px;
+  font-size: 10px;
+  width: 50%;
+  outline: none;
+}
+
+.magnifier {
+  position: absolute;
+  right: 51%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*Main style*/
+main {
+  padding: 0;
+  font-family: 'Open Sans';
+  font-size: 20pt;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-banner{
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 1163px; /*This size worked so the blue background fits the entire page width*/
+}
+
+.blue-background{
+  background-color: #CEE1FC;
+  width: 1163px; /*This size worked so the blue background fits the entire page width*/
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  padding: 100px 50px 100px 50px; /*top, left, bottom, right sides*/
+  display: flex;
+  flex-flow: column wrap;
+  gap: 40px;
+}
+
+.upper-boxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.textbox-main{
+  background-color: #EAEBEC;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 10px;
+  width: 100%;
+}
+
+
+/*Personal Details box*/
+.personal-details-box{
+  background-color: #5C83BF;
+  width: 200px;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px 30px 20px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166);
+}
+
+.box-header{ /*It's the same for all the boxes*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+
+.emily-kara-pic{
+  width: 80px;
+  height: 80px;
+}
+
+.pencil-icon{
+  width: 10px;
+  height: 10px;
+}
+
+.personal-details-title{
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.profile-name{
+  font-size: 10px;
+  color: #FFFFFF;
+}
+
+.share-profile-link{
+  background-color: #7cadf8;
+  border: none;
+  color: #FFFFFF;
+  padding:10px 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/*Projects and Work History boxes*/
+.project-work-history{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  font-size: 15px;
+  color: #F1F1F2;
+  gap: 40px;
+  flex: 1;
+}
+
+.project-work-history input{
+  height: 20px;
+}
+
+.projects-box{
+  background-color: #5C83BF;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px 50px 20px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166); 
+  flex: 1;
+}
+
+.work-history-box{
+  background-color: #5C83BF;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px 50px 20px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166);
+  flex: 1;
+}
+
+/*Education box*/
+.education-box{
+  background-color: #5C83BF;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 15px;
+  color: #F1F1F2;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px 50px 30px 30px;
+  box-shadow: 10px 5px 5px rgb(167, 166, 166);
+}
+
+.education-box input{
+  height: 20px;
+}
+
+/*Footer style*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #5C83BF;
+  color: #F1F1F2;
+}
+
+.slogan-info-media {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 30px;
+  margin: 30px 0 20px 0;
+}
+
+.slogan-info {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+  margin: 30px 0 0 0;  
+  font-weight: 100;
+}
+
+.span-slogan {
+  font-size: 15pt;
+  font-weight: 500;
+}
+
+.span-info {
+  font-size: 10pt;
+  font-weight: 300;
+}
+
+.social-icons {
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-top: 0;
+}
+
+.footer-img {
+  margin-top: 10px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 40px 0 auto 0;
+  gap: 20px;
+  margin: 65px 0 20px 0;
+  line-height: 40px;
+}
+
+.footer-link-head{   /*Makes the fist itme of each column bold*/
+  color: #F1F1F2;
+  font-weight: bold;
+}
+
+.footer-link {
+  color: #F1F1F2;
+}
+
+@media only screen and (max-width: 430px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  }

@@ -1,74 +1,14 @@
 /*General style*/
 * {
   margin: 0;
-}
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-/*Header style*/
-header {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  padding: 0;
-  font-family: "Lato";
-}
-
-.header-text {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-}
-
-.header-link{
-  color: #333434;
-}
-
-.site-name {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: space-around;
-  align-items: center;
-  gap: 10px;
-}
-
-.header-title {
-  color: #5C83BF;
-}
-
-.header-list {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: space-around;
-  align-items: center;
-  gap: 20px;
-}
-
-.signup-button {
-  background-color: #7cadf8;
-  border: none;
-  color: white;
-  padding:10px 20px;
-  text-align: center;
-  border-radius: 20px;
-}
-
-.header-img {
-  width: 100%;
-  height: 28%;
+  font-family: 'Lato', sans-serif; /*Sets the font for the entire page*/
 }
 
 /*Main style*/
 main {
-  padding: 10%;
+  padding: 0px;
   font-family: 'Open Sans';
+  font-size: 20pt;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -76,10 +16,25 @@ main {
   gap: 50px;
 }
 
+.header-img {
+  padding: 0;
+}
+
 .about-section{
   display: flex;
   flex-flow: column wrap;
   gap: 10px;
+  padding: 20px;
+  margin: 10px 100px 20px 100px;
+  align-items: center;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  width: 110%;
+  background-color: #D9D9D9;
+  margin: 20px 0; /* Add some margin for spacing */
 }
 
 .proj-showcase {
@@ -87,6 +42,8 @@ main {
   flex-flow: row wrap;
   justify-content: space-around;
   gap: 10px;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 .img-bottom {
@@ -119,48 +76,3 @@ main {
   font-weight: bold;
 }
 
-/*Footer style*/
-footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: #5C83BF;
-  color: #F1F1F2;
-  font-family: "Lato";
-}
-
-.slogan-info-media {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: baseline;
-  gap: 10px;
-  margin: 30px 0 20px 0;
-}
-
-.social-icons {
-  display: flex;
-  font-size: 1rem;
-  justify-content: space-around;
-  align-content: space-around;
-  align-items: center;
-  gap: 20px;
-}
-
-.footer-menu {
-  color: #F1F1F2;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 30px 0 auto 0;
-}
-
-.footer-link {
-  color: #F1F1F2;
-}
-
-@media only screen and (max-width: 430px) {
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  }

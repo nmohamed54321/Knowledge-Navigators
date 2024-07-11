@@ -1,0 +1,180 @@
+main{
+  display: flex; /*Makes the main section a flex container*/
+  flex-direction: column; /*Aligns the content in the main section vertically*/
+  justify-content: center; /*Centers the content in the main section*/
+  align-items: center; /* Centers the content horizontally */
+  min-height: 100vh; /*Sets the minimum height of the main section to 100% of the viewport height*/
+}
+.login-header h1 {
+  font-size: 35px; /*Sets the font size of the text*/
+  color: black; /*Sets the text color to black*/
+  text-align: center; /*Aligns the text to the center*/
+}
+
+.login-subheader h2 {
+  font-size: 30px; /*Sets the font size of the text*/
+  color: black; /*Sets the text color to black*/
+  text-align: center; /*Aligns the text to the center*/
+  margin-top: 60px; /*Adds space between the header and the subheader*/
+  margin-bottom: 0px;
+}
+
+.wrapper {
+  width: 663px;
+  display: flex; /*Makes the main section a flex container*/
+  flex-direction: column; /* Aligns the content in the wrapper vertically */
+  align-items: center; /* Centers the content horizontally */
+  min-height: 100vh; /*Sets the minimum height of the main section to 100% of the viewport height*/
+  margin-top: 83px;
+  margin-bottom: 73px;
+}
+
+.wrapper .input-box{
+  width: 576px;
+  height: 64px;
+  margin-bottom: 47px;
+}
+.wrapper form {
+  display: flex; /*Makes the form a flex container*/
+  flex-direction: column; /* Aligns the content in the form vertically */
+  align-items: center; /* Centers the content horizontally */
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 30px;
+  background-color: #EDEFF3;
+  font-size: 20px;
+  color: #00000080;
+  box-sizing: border-box;
+  padding-left: 33px;
+}
+
+.input-box input::placeholder {
+  color: #00000080;
+}
+.wrapper .sign-in{
+  display: flex; /* Ensures the button's content is centered */
+  justify-content: center; /* Centers the button's content horizontally */
+  align-items: center; /* Centers the button's content vertically */
+
+}
+.wrapper .signin-button {
+  background-color: #7cadf8;
+  margin-top: 35px;
+  width: 227px;
+  height: 70px;
+  border: none;
+  border-radius: 30px;
+  font-size: 30px;
+  color: black;
+}
+
+.separator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 32px 0;
+  margin-bottom: 113px;
+}
+
+.separator hr {
+  width: 292px;
+  border: none;
+  border-top: 1px solid #000;
+}
+
+.separator span {
+  padding: 0 15px;
+  color: #000;
+  font-size: 32px;
+}
+
+/* sign in button */
+.si-button {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-color: WHITE;
+  background-image: none;
+  border: 1px solid #747775;
+  -webkit-border-radius: 20px;
+  border-radius: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #1f1f1f;
+  cursor: pointer;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 20px;
+  height: 80px;
+  letter-spacing: 0.25px;
+  outline: none;
+  overflow: hidden;
+  text-align: center;
+  -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  max-width: 663px;
+  min-width: min-content;
+  margin-bottom: 57px;
+}
+
+.si-button .si-button-icon {
+  height: 46px;
+  margin-left: 181px;
+  min-width: 46px;
+  width: 46px;
+}
+
+.si-button .si-button-content-wrapper {
+  -webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.si-button .si-button-contents {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  margin-left: 26px;
+}
+
+
+.si-button:disabled {
+  cursor: default;
+  background-color: #ffffff61;
+  border-color: #1f1f1f1f;
+}
+
+.si-button:disabled .si-button-contents {
+  opacity: 38%;
+}
+
+.si-button:disabled .si-button-icon {
+  opacity: 38%;
+}
+
+
+.social-icons {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+}

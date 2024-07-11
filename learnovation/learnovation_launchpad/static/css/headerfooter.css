@@ -1,0 +1,243 @@
+/* -------------------------------------------------------------------------- */
+/*                                    Fonts                                   */
+/* -------------------------------------------------------------------------- */
+/* Primary/headline fonts */
+/* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Inter (alternate) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Montserrat (alternate) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* Secondary/body fonts */
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* PT Sans (alternate) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Source Sans Pro (alternate) */
+@import url("https://use.typekit.net/qyq6gec.css");
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Globals                                  */
+/* -------------------------------------------------------------------------- */
+:root {
+    /* Fonts */
+    --font-primary-head: 'Lato', sans-serif;
+    --font-secondary-body: 'Open Sans', sans-serif;
+    
+    /* Primary colors */
+    --primary-color-1: #5C83BF;
+    --primary-color-2: #7CADF8;
+    --primary-color-3: #333434;
+    --primary-color-4: #F1F1F2;
+
+    /* Secondary colors */
+    --secondary-color-1: #F0716B;
+    --secondary-color-2: #9B59B6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-secondary-body);
+    margin: 0 2.5rem;
+    overflow-x: hidden;
+}
+
+/* Button style */
+.button {
+    background-color: var(--primary-color-2);
+    color: white;
+}
+
+/* Horizontal center */
+.h-center {
+    max-width: 100vw;
+    padding: 0 1.4rem;
+    margin: 0 auto;
+}
+
+/* Align items in a row */
+.content-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Some elements inside all-container will have full width */
+.full-width {
+    --content-width: 100%;
+
+    margin-left: calc(-100vw / 2 + var(--content-width) / 2);
+    margin-right: calc(-100vw / 2 + var(--content-width) / 2);
+}
+
+/* Align text next to image */
+.img-align-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0fr 1fr;
+    column-gap: 0px;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    Logo                                    */
+/* -------------------------------------------------------------------------- */
+.navbar-logo {
+    width: 4em;
+}
+.logo-text {
+    color: var(--primary-color-1);
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Navbar                                   */
+/* -------------------------------------------------------------------------- */
+/* Whole navbar */
+#navbar {
+    padding-top: 2em;
+}
+
+/* Navbar content */
+.navbar-container {
+    font-family: var(--font-primary-head);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+/* Each navbar item */
+.navbar-item {
+    margin: 0.4em;
+    padding: 0 1.5em;
+    font-size: 1.1em;
+}
+
+/* Remove default link color */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* TODO: mobile size? */
+
+/* Desktop size */
+@media screen and (min-width: 700px) {
+    .navbar-toggle {
+        display: none;
+    }
+    
+    .navbar .navbar-menu,
+    .navbar.opened .navbar-menu {
+        visibility: visible;
+        opacity: 1;
+        position: static;
+        display: block;
+        height: 100%;
+    }
+
+    .navbar .navbar-links,
+    .navbar.opened .navbar-links {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        position: static;
+        flex-direction: row;
+        list-style-type: none;
+        max-height: max-content;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar .navbar-link:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Sign up button */
+.button-sign-up {
+    padding: .8em 2em;
+    border-radius: 25px;
+    margin-left: 2.5em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.09);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+/* Footer container */
+#footer-container {
+    background-color: var(--primary-color-1);
+    color: white;
+    padding: 3.5em 5em;
+    font-family: var(--font-primary-head);
+    display: grid;
+    grid-template-columns: 55% auto auto auto;
+}
+
+/* Footer nav area */
+.footer-nav {
+    font-size: 1.2em;
+}
+.footer-nav-item-middle-spacing {
+    margin: 1em 0;
+}
+.footer-nav-header {
+    font-weight: 400;
+}
+.footer-nav-items {
+    font-weight: 300;
+}
+ul {
+    list-style-type: none;
+}
+
+/* ----------------------------- Tagline column ----------------------------- */
+/* Tagline */
+.footer-tagline {
+    font-size: 1.625em;
+    font-weight: 300;
+}
+
+/* Copyright */
+.footer-copyright {
+    padding: 1em 0;
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+/* Social media */
+.footer-social-media {
+    column-gap: 1em;
+    padding-bottom: 3em;
+}
+.footer-social-media-icon {
+    width: 2em;
+}
+
+/* Footer logo */
+.footer-logo {
+    width: 4vw;
+}
